@@ -7,5 +7,10 @@ pkgs.stdenv.mkDerivation {
     rust-analyzer
     pkg-config
     flutter
+    android-tools
+    adbfs-rootless
+    mesa
+    cmake
+    zulu24
   ];
 }
