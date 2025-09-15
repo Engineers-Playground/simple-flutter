@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: const Text(title)),
         body: const Padding(
-          padding: EdgeInsets.all(8),
+          padding: EdgeInsets.all(10),
           child: Column(
             children: [
               Column(
