@@ -17,17 +17,30 @@ class MyApp extends StatelessWidget {
           padding: EdgeInsets.all(8),
           child: Column(
             children: [
-              ImageNetwork(
-                alt: "nework owl image",
-                img:
-                    "https://media.istockphoto.com/id/1726264350/de/foto/vogelbeobachtung-von-waldohreulen-von-einem-kiefernzweig-in-einem-geheimnisvollen-wald-aus.webp?s=1024x1024&w=is&k=20&c=yCJn99tlasrzQ2HjP5HwQa7AR8kt7cx_jde16gs_eLo=",
+              Column(
+                children: [
+                  ImageNetwork(
+                    alt: "network owl image",
+                    img:
+                        "https://media.istockphoto.com/id/1726264350/de/foto/vogelbeobachtung-von-waldohreulen-von-einem-kiefernzweig-in-einem-geheimnisvollen-wald-aus.webp?s=1024x1024&w=is&k=20&c=yCJn99tlasrzQ2HjP5HwQa7AR8kt7cx_jde16gs_eLo=",
+                  ),
+                  TitleSection(
+                    topic: "Owl Photo",
+                    description: "Taken in the US forest",
+                  ),
+                  TitleSection(topic: "Date", description: "2025-09-15"),
+                ],
               ),
-              // ImageSection(image: 'images/lake.jpg'),
-              TitleSection(
-                topic: "Owl Photo",
-                description: "Taken in the US forest",
+              Column(
+                children: [
+                  ImageSection(image: 'images/forest.jpeg'),
+                  TitleSection(
+                    topic: "Forest Photo",
+                    description: "Taken in the Russian forest",
+                  ),
+                  TitleSection(topic: "Date", description: "2025-08-15"),
+                ],
               ),
-              TitleSection(topic: "Date", description: "2025-09-15"),
             ],
           ),
         ),
@@ -66,13 +79,13 @@ class ImageNetwork extends StatelessWidget {
   }
 }
 
-// class ImageSection extends StatelessWidget {
-//   const ImageSection({super.key, required this.image});
-//
-//   final String image;
-//
-//   @override
-//   Widget build(BuildContext context) {
-//     return Image.asset(image, width: 600, height: 240, fit: BoxFit.cover);
-//   }
-// }
+class ImageSection extends StatelessWidget {
+  const ImageSection({super.key, required this.image});
+
+  final String image;
+
+  @override
+  Widget build(BuildContext context) {
+    return Image.asset(image, width: 600, height: 240, fit: BoxFit.cover);
+  }
+}
