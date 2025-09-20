@@ -13,15 +13,15 @@ class MobileView extends StatelessWidget {
     log('context in mobileView is - ', error: context);
     return Scaffold(
       backgroundColor: Colors.purple[300],
-      appBar: AppBar(title: Text('Basic Mobile Layout')),
+      appBar: AppBar(title: Text('Youtube Mobile Layout')),
       body: Column(
         children: [
           // youtube video
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: AspectRatio(
-              aspectRatio: 16 / 9,
-              child: Container(color: Colors.purple[100]),
+              aspectRatio: 17 / 9,
+              child: Container(color: Colors.purple[100], child: Text("video")),
             ),
           ),
 
@@ -32,7 +32,11 @@ class MobileView extends StatelessWidget {
               itemBuilder: (context, index) {
                 return Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Container(color: Colors.grey[300], height: 120),
+                  child: Container(
+                    color: Colors.grey[300],
+                    height: 100,
+                    child: Text("comment"),
+                  ),
                 );
               },
             ),

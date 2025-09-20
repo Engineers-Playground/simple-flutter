@@ -13,33 +13,39 @@ class DesktopView extends StatelessWidget {
     log('context in mobileView is - ', error: context);
     return Scaffold(
       backgroundColor: Colors.purple[300],
-      appBar: AppBar(title: Text('Basic Desktop Layout')),
+      appBar: AppBar(title: Text('Youtube Desktop Layout')),
       body: Row(
         children: [
           Expanded(
             flex: 3,
-            child: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Column(
-                children: [
-                  AspectRatio(
-                    aspectRatio: 4 / 1,
+            child: Column(
+              children: [
+                AspectRatio(
+                  aspectRatio: 4 / 1,
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
                     child: Container(
                       color: Colors.purple[100],
-                      child: Text("i am mainbar"),
+                      child: Text("i am youtube vide"),
                     ),
                   ),
-                  ListView.builder(
+                ),
+                Expanded(
+                  child: ListView.builder(
                     itemCount: 8,
                     itemBuilder: (context, index) {
                       return Padding(
                         padding: EdgeInsets.all(8.0),
-                        child: Container(color: Colors.grey[200]),
+                        child: Container(
+                          color: Colors.grey[200],
+                          height: 120,
+                          child: Text("i am comment"),
+                        ),
                       );
                     },
                   ),
-                ],
-              ),
+                ),
+              ],
             ),
           ),
           Expanded(
@@ -51,8 +57,8 @@ class DesktopView extends StatelessWidget {
                   AspectRatio(
                     aspectRatio: 1 / 1,
                     child: Container(
-                      color: Colors.purple[100],
-                      child: Text("i am mainbar"),
+                      color: Colors.grey[200],
+                      child: Text("i am video recommendations"),
                     ),
                   ),
                 ],
