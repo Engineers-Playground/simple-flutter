@@ -6,17 +6,11 @@ class ChatList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.all(5.0),
-      child: Column(
-        children: [
-          Expanded(
-            child: ListView.builder(
-              itemCount: 10,
-              itemBuilder: (context, index) {
-                return Chat(chat_index: index);
-              },
-            ),
-          ),
-        ],
+      child: ListView.builder(
+        itemCount: 5,
+        itemBuilder: (context, index) {
+          return Chat(chat_index: index);
+        },
       ),
     );
   }
