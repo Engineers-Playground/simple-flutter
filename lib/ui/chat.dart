@@ -5,6 +5,8 @@ class Chat extends StatelessWidget {
   final String messanger;
   @override
   Widget build(BuildContext context) {
-    return Text("your chat is none of my business " + messanger);
+    return Scaffold(
+      body: Text("your chat is none of my business " + messanger),
+    );
   }
 }
