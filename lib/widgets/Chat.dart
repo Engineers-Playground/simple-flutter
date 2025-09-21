@@ -7,7 +7,7 @@ class Chat extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.only(bottom: 5),
-      padding: EdgeInsets.all(8.0),
+      padding: EdgeInsets.all(10.0),
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [Colors.grey, Colors.blueGrey.withOpacity(0.2)],
@@ -17,9 +17,18 @@ class Chat extends StatelessWidget {
         children: [
           Expanded(
             flex: 5,
-            child: Column(children: [Text("Ism Sharif"), Text("Oxirgi xabar")]),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [Text("Ism Sharif"), Text("Oxirgi xabar")],
+            ),
           ),
-          Expanded(flex: 1, child: Text(chat_index.toString())),
+          Expanded(
+            flex: 1,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [Text(chat_index.toString())],
+            ),
+          ),
         ],
       ),
     );

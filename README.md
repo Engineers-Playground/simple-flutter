@@ -1,6 +1,17 @@
-# flutterchi
-Please check out all the branch)
+# First step layout
 
+Basic desktop layout:
 
+![./images/mobile.png](images/desktop.png)
+Basic mobile layout:
+
+![./images/mobile.png](images/mobile.png)
+
+Useful Links:
+
+- https://pub.dev/
 - [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-[online documentation](https://docs.flutter.dev/)
+  [online documentation](https://docs.flutter.dev/)
+<hr>
+
+P.S., please checkout all branches
