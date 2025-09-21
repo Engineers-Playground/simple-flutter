@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class FloatingBar extends StatelessWidget {
+class FloatingBarW extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

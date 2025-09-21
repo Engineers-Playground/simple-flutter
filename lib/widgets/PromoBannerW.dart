@@ -2,7 +2,7 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 
-class PromoBanner extends StatelessWidget {
+class PromoBannerW extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

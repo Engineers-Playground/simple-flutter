@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '/widgets/Chat.dart';
+import '/widgets/ChatW.dart';
 
-class ChatList extends StatelessWidget {
+class ChatListW extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -9,7 +9,7 @@ class ChatList extends StatelessWidget {
       child: ListView.builder(
         itemCount: 5,
         itemBuilder: (context, index) {
-          return Chat(chat_index: index);
+          return ChatW(chat_index: index);
         },
       ),
     );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import '/ui/chatList.dart';
-import '/widgets/FloatingBar.dart';
-import '/widgets/PromoBanner.dart';
+import '../widgets/ChatListW.dart';
+import '/widgets/FloatingBarW.dart';
+import '/widgets/PromoBannerW.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -13,13 +13,13 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text("ChatApp")),
-      floatingActionButton: FloatingBar(),
+      floatingActionButton: FloatingBarW(),
       body: Column(
         children: [
-          PromoBanner(),
+          PromoBannerW(),
           Expanded(
             // PromoBanner(),
-            child: ChatList(),
+            child: ChatListW(),
           ),
         ],
       ),
