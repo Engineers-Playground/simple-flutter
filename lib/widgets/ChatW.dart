@@ -26,7 +26,10 @@ class ChatW extends StatelessWidget {
                   borderRadius: BorderRadius.all(Radius.circular(30.0)),
                 ),
                 padding: EdgeInsets.only(right: 8.0),
-                child: Image.network("https://picsum.photos/250?image=9"),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(50),
+                  child: Image.network("https://picsum.photos/250?image=9"),
+                ),
                 // child: Image.network(
                 //   "https://picsum.photos/seed/$chat_index/1200/700",
                 // ),

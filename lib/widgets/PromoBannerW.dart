@@ -58,10 +58,13 @@ class PromoBannerW extends StatelessWidget {
           ),
           width: double.infinity,
           height: 150,
-          child: Image.network(
-            "https://picsum.photos/250?image=9",
-            width: double.infinity,
-            fit: BoxFit.cover,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(24),
+            child: Image.network(
+              "https://picsum.photos/250?image=9",
+              width: double.infinity,
+              fit: BoxFit.cover,
+            ),
           ),
         ),
         Container(
