@@ -21,7 +21,12 @@ class MobileView extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: AspectRatio(
               aspectRatio: 17 / 9,
-              child: Container(color: Colors.purple[100], child: Text("video")),
+              child: Container(
+                color: Colors.purple[100],
+                height: 300,
+                child: ImageSection(image: 'images/forest.jpeg'),
+                // child: ImageSection(image: 'images/forest.jpeg'),
+              ),
             ),
           ),
 

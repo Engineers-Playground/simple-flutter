@@ -20,16 +20,14 @@ class DesktopView extends StatelessWidget {
             flex: 3,
             child: Column(
               children: [
-                AspectRatio(
-                  aspectRatio: 4 / 1,
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Container(
-                      color: Colors.purple[100],
-                      child: Text("i am youtube vide"),
-                    ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    color: Colors.purple[100],
+                    child: ImageSection(image: 'images/forest.jpeg'),
                   ),
                 ),
+
                 Expanded(
                   child: ListView.builder(
                     itemCount: 8,
