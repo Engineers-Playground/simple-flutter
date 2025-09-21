@@ -48,7 +48,31 @@ class Chat extends StatelessWidget {
                     flex: 1,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [Text(chat_index.toString())],
+                      children: [
+                        Container(
+                          height: 20,
+                          margin: EdgeInsets.only(right: 8.0),
+                          width: 20,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            gradient: LinearGradient(
+                              colors: [
+                                Colors.red,
+                                Colors.blueAccent.withOpacity(0.6),
+                              ],
+                            ),
+                          ),
+                          child: const Center(child: Text("1")),
+                        ),
+                        // ElevatedButton(
+                        //   // style: BoxDecoration(
+                        //   //
+                        //   // ),
+                        //   onPressed: () {},
+                        //   child: Text(chat_index.toString()),
+                        // ),
+                        Text("12:03"),
+                      ],
                     ),
                   ),
                 ],

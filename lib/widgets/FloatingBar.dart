@@ -9,7 +9,7 @@ class FloatingBar extends StatelessWidget {
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         gradient: LinearGradient(
-          colors: [Colors.red, Colors.redAccent.withOpacity(0.6)],
+          colors: [Colors.red, Colors.blueAccent.withOpacity(0.6)],
         ),
       ),
       child: const Center(

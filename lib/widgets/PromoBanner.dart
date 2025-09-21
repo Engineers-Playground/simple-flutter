@@ -7,14 +7,7 @@ class PromoBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Container(
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: NetworkImage(
-            "https://static.vecteezy.com/system/resources/thumbnails/041/912/990/small_2x/ai-generated-a-peaceful-countryside-road-on-a-quiet-dark-night-generative-ai-photo.jpeg",
-          ),
-          fit: BoxFit.cover,
-        ),
-      ),
+      // decoration: BoxDecoration(image: Image(image: Image.asset("name"))),
       padding: const EdgeInsets.all(10.0),
       width: double.infinity,
       child: Expanded(
