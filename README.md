@@ -1,8 +1,9 @@
 # First step layout
 
-Basic desktop layout:
+[//]: # (Basic desktop layout:)
 
-![./images/mobile.png](images/desktop.png)
+[//]: # ()
+[//]: # (![./images/mobile.png]&#40;images/desktop.png&#41;)
 Basic mobile layout:
 
 ![./images/mobile.png](images/mobile.png)
