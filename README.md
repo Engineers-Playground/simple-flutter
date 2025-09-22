@@ -3,7 +3,7 @@
 [//]: # (Basic desktop layout:)
 
 [//]: # (![./images/mobile.png]&#40;images/desktop.png&#41;)
-Basic mobile layout:
+Basic mobile layout(Old):
 
 ![./images/mobile.png](images/mobile.png)
 
