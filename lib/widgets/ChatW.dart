@@ -10,6 +10,8 @@ class ChatW extends StatelessWidget {
       margin: EdgeInsets.only(bottom: 5),
       padding: EdgeInsets.all(5.0),
       child: InkWell(
+        hoverColor: Colors.blueAccent,
+        borderRadius: BorderRadius.circular(20.0),
         onTap: () {
           Navigator.of(context).push(
             MaterialPageRoute(
