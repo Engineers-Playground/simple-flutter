@@ -21,7 +21,7 @@ class WidgetbookApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Widgetbook.material(
-      // Use the generated directories variable
+      // Use the generated directories variablesp
       directories: directories,
     );
   }
