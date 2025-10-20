@@ -10,8 +10,8 @@
 // **************************************************************************
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
-import 'package:flutterchi/ava.dart' as _flutterchi_ava;
-import 'package:flutterchi/cool_button.dart' as _flutterchi_cool_button;
+import 'package:flutterchi/widgets/ava.dart' as _flutterchi_ava;
+import 'package:flutterchi/widgets/cool_button.dart' as _flutterchi_cool_button;
 import 'package:widgetbook/widgetbook.dart' as _widgetbook;
 
 final directories = <_widgetbook.WidgetbookNode>[
@@ -25,6 +25,10 @@ final directories = <_widgetbook.WidgetbookNode>[
       _widgetbook.WidgetbookUseCase(
         name: 'With stories',
         builder: _flutterchi_ava.withStories,
+      ),
+      _widgetbook.WidgetbookUseCase(
+        name: 'withStatus',
+        builder: _flutterchi_ava.withStatus,
       ),
     ],
   ),
