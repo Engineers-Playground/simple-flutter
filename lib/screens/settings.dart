@@ -67,7 +67,9 @@ class SettingsScreen extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Header(image: "assets/userpic.png"),
+              Header(
+                  image:
+                      "https://blog.logrocket.com/wp-content/uploads/2022/01/handling-network-connectivity-flutter.png"),
               Padding(padding: EdgeInsets.only(bottom: 16)),
               Container(
                 margin: EdgeInsets.only(right: 16, left: 16),

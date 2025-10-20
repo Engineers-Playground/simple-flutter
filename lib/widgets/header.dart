@@ -17,7 +17,12 @@ class Header extends StatelessWidget {
             left: 0,
             bottom: 0,
             right: 0,
-            child: Image.asset(fit: BoxFit.fill, height: 360, image),
+            child: Image.network(
+              fit: BoxFit.fill,
+              height: 360,
+              image,
+            ),
+            // child: NetworkImage(fit: BoxFit.fill, height: 360, image),
           ),
           Positioned(
             bottom: 8,
