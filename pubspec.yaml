@@ -16,6 +16,7 @@ dependencies:
   step_progress_indicator: ^1.0.2
   widgetbook: ^3.17.0
   widgetbook_annotation: ^3.7.0
+  image_stack: ^2.1.1
 
 dev_dependencies:
   flutter_test:
