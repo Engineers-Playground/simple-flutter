@@ -13,4 +13,4 @@ ui-chatapp branch:
 yt-layout branch:
 <img src="./assets/img_2.png"/>
 
-P.S., Please check out all the branches)
+<i>Please check out all the branches</i>
