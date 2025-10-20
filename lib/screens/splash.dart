@@ -33,16 +33,17 @@ class _SplashScreenState extends State<SplashScreen>
     return Scaffold(
       backgroundColor: consts.colors.dominant.bgHighContrast,
       body: Container(
-        width: double.infinity,
-        child: Text(
-          "hellooooo",
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            color: Colors.white,
-            fontSize: 18,
-          ),
-        ),
-      ),
+          width: double.infinity,
+          child: Center(
+            child: Text(
+              "Splash screen",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 18,
+              ),
+            ),
+          )),
     );
   }
 }
