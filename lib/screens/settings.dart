@@ -59,7 +59,6 @@ class SettingsScreen extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
         backgroundColor: consts.colors.dominant.bgHighContrast,
         appBar: AppBar(
@@ -103,11 +102,14 @@ class SettingsScreen extends StatelessWidget {
                       option: {"title": "Выход", "icon": Icons.exit_to_app},
                       color: Colors.red,
                     ),
-                    Text(
-                      textAlign: TextAlign.center,
-                      style: TextStyle(color: Colors.grey, fontSize: 12),
-                      "Telegram для Android v10.1.3 (3944) store bundled  by Vitaly Yakovlev :)",
+                    Center(
+                      child: Text(
+                        textAlign: TextAlign.center,
+                        style: TextStyle(color: Colors.grey, fontSize: 12),
+                        "Telegram для Android v10.1.3 (3944) store bundled  by Vitaly Yakovlev :)",
+                      ),
                     ),
+                    Padding(padding: EdgeInsets.only(bottom: 10))
                   ],
                 ),
               ),

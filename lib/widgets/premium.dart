@@ -10,7 +10,7 @@ class Premium extends StatelessWidget {
     return Container(
       padding: EdgeInsets.only(top: 12, left: 16, right: 16, bottom: 12),
       margin: EdgeInsets.all(2),
-      width: 344,
+      width: double.infinity,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [

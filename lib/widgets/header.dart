@@ -8,7 +8,7 @@ class Header extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 360,
+      width: double.infinity,
       height: 360,
       child: Stack(
         children: [

@@ -15,7 +15,7 @@ class UserStatusInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 344,
+      width: double.infinity,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [

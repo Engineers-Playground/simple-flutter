@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutterchi/screens/settings.dart';
+import 'package:flutterchi/constants.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -14,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen>
     super.initState();
     SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersive);
 
-    Future.delayed(Duration(seconds: 2), () {
+    Future.delayed(Duration(seconds: 10), () {
       Navigator.of(context)
           .pushReplacement(MaterialPageRoute(builder: (_) => SettingsScreen()));
     });
@@ -30,8 +31,17 @@ class _SplashScreenState extends State<SplashScreen>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: consts.colors.dominant.bgHighContrast,
       body: Container(
-        child: Text("hello"),
+        width: double.infinity,
+        child: Text(
+          "hellooooo",
+          textAlign: TextAlign.center,
+          style: TextStyle(
+            color: Colors.white,
+            fontSize: 18,
+          ),
+        ),
       ),
     );
   }

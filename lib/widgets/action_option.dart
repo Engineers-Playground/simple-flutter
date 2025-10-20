@@ -14,7 +14,7 @@ class ActionOption extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(top: 12, left: 16, right: 16, bottom: 12),
-      width: 344,
+      width: double.infinity,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.all(Radius.circular(16)),
         color: consts.colors.dominant.bgMediumContrast,
